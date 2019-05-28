@@ -7,7 +7,7 @@ const se_id = process.env.SE_ID;
 
 const return_did_you_mean = (query, callback) => {
     return new DidYouMean(query, api_key, se_id,  (body) => {
-        console.log(body);
+        //console.log(body);
 
         callback(body);
     }).query_google();
@@ -24,7 +24,7 @@ class DidYouMean{
 
     query_google(){
         request({url: this.build_query_url(), headers:this.headers, method:'GET'}, (error, response, body) => {
-            console.log(body);
+            //console.log(body);
             this.callback(body);
         });
     }
@@ -47,3 +47,4 @@ class DidYouMean{
 }
 
 exports.return_did_you_mean = return_did_you_mean;
+exports.did_you_mean = DidYouMean;

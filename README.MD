@@ -18,3 +18,9 @@ Response looks like this:
 or if there is no correction
 >No correction.
 
+## CLI Version
+
+Also included is a command line version. Simply set up your .env file as you would normally, and run 
+> npm run spell mispelled
+
+This will return the corrected version printed in your console.

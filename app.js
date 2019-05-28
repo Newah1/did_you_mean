@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
         try {
             res.json({corrected : response.spelling.correctedQuery});   
         } catch (error) {
-            res.send("No correction.");
+            res.json({corrected : "null"});   
         }
 
     });
