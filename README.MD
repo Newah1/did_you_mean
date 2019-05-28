@@ -16,8 +16,7 @@ Response looks like this:
 >{"corrected":"misspell"}
 
 or if there is no correction
->No correction.
-
+>{"corrected":"null"}
 ## CLI Version
 
 Also included is a command line version. Simply set up your .env file as you would normally, and run 
